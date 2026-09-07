@@ -341,8 +341,8 @@ p,
 }
 
 .logo {
-	width: 100%;
-	max-width: 120px;
+    width: 100%;
+    max-width: 160px;
 }
 
 .headermenu .dropdown-menu .iconboxbg {
@@ -1292,7 +1292,7 @@ input:-webkit-autofill:active {
 .footlogo img {
 	width: 100%;
 	max-width: 200px;
-	filter: invert(1);
+	/* filter: invert(1); */
 }
 
 .socialbg .d-flex>div {
@@ -1376,16 +1376,20 @@ input:-webkit-autofill:active {
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-position: center; */
-	background-color: #fff;
+	background-color: #ffffff48;
+	backdrop-filter: blur(10px);
 	z-index: 9999;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	
+
+	
 }
 
 .pageloaderbox img {
 	width: 100%;
-	max-width: 100px;
+	max-width: 600px;
 }
 
 .loader {
@@ -9293,7 +9297,7 @@ section.Toastify {
 
 @media (max-width:991px) {
 	.logo {
-		max-width: 100px;
+		max-width: 140px;
 	}
 
 	.socialbg .flexbox>div img {
@@ -9670,11 +9674,11 @@ section.Toastify {
 	}
 
 	.logo {
-		max-width: 84px;
+		max-width: 120px;
 	}
 
 	.headbg .navbar-brand {
-		width: 84px;
+		width: 120px;
 	}
 
 	.modal-body {

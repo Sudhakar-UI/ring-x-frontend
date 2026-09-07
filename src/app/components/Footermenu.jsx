@@ -11,7 +11,7 @@ const Homefooter = () => {
                             <Col lg={4} md={6}>
                                 <div className="footabtcnt">
                                     <div className="mb-1 footlogo">
-                                        <Image src="assets/images/ringx-logo.svg" width={100} height={57} alt="logo" />
+                                        <Image src="assets/images/nexahive-white-logo.svg" width={100} height={57} alt="logo" />
                                     </div>
                                     <p className="ftxt mb-3">Take your crypto to the next level</p>
                                     <div className="followusdiv mt-3">

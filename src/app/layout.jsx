@@ -14,11 +14,11 @@ export default function RootLayout({ children }) {
   useEffect(() => {
     require("bootstrap/dist/js/bootstrap.bundle.min.js");
 
-    const timer = setTimeout(() => {
-      setLoading(false);
-    }, 2000);
+    // const timer = setTimeout(() => {
+    //   setLoading(false);
+    // }, 1000);
 
-    return () => clearTimeout(timer);
+    // return () => clearTimeout(timer);
   }, []);
 
   return (
@@ -26,7 +26,7 @@ export default function RootLayout({ children }) {
       <head>
         <link
           rel="icon"
-          href="/assets/images/favicon.png"
+          href="/assets/images/nexahive-favicon.png"
           type="image/png"
           sizes="32x32"
         />

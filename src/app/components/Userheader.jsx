@@ -40,7 +40,7 @@ const Userheader = () => {
           <div className=" d-flex align-items-center">
             <Navbar.Brand>
               <Link href="/">
-                <Image src="assets/images/ringx-logo.svg" width={100} height={57} className="logo logo-act" alt="logo" />
+                <Image src="assets/images/new-logo.svg" width={100} height={57} className="logo logo-act" alt="logo" />
               </Link>
             </Navbar.Brand>
             {/* <Navbar.Toggle aria-controls="basic-navbar-nav" /> */}

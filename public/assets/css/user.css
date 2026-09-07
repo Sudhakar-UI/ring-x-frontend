@@ -33,7 +33,7 @@ body.userpanelpage,
 	margin-top: -6px;
 } */
 .uheadbg .logo {
-	max-width: 85px;
+	max-width: 146px;
 	margin-top: -6px;
 	margin-right: 10px;
 }
@@ -114,7 +114,7 @@ body.userpanelpage,
 }
 
 .leftsidemenu .logo {
-	max-width: 120px;
+	max-width: 190px;
 	margin-bottom: 10px;
 	filter: none !important;
 	margin: 0 auto;
@@ -7842,6 +7842,10 @@ a.nav-link.dropdown-bs-toggle.titlemenu.new-nav.show {
 }
 
 @media (max-width:430px) {
+	.uheadbg .logo {
+		max-width: 126px;
+	}
+
 	.earn-grid {
 		grid-template-columns: repeat(1, 1fr);
 	}
@@ -7961,6 +7965,10 @@ a.nav-link.dropdown-bs-toggle.titlemenu.new-nav.show {
 }
 
 @media (max-width:350px) {
+	.uheadbg .logo {
+		max-width: 100px;
+	}
+
 	/* .searchfrm {
 		padding: 0px;
 	} */

@@ -38,7 +38,7 @@ const Userheader = () => {
         <Container>
           <Navbar.Brand>
             <Link href="/">
-              <Image src="assets/images/ringx-logo.svg" width={100} height={57} className="logo" alt="logo" />
+              <Image src="assets/images/new-logo.svg" width={100} height={57} className="logo" alt="logo" />
             </Link>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
