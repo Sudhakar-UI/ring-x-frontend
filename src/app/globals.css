@@ -341,8 +341,8 @@ p,
 }
 
 .logo {
-    width: 100%;
-    max-width: 160px;
+	width: 100%;
+	max-width: 160px;
 }
 
 .headermenu .dropdown-menu .iconboxbg {
@@ -1382,9 +1382,9 @@ input:-webkit-autofill:active {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	
 
-	
+
+
 }
 
 .pageloaderbox img {
@@ -9188,7 +9188,8 @@ section.Toastify {
 	font-weight: 800;
 }
 
-.pre-market-trade .wlltpageblnce {
+.pre-market-trade .wlltpageblnce,
+.before-profile-preview-page .wlltpageblnce {
 	padding: 0px;
 }
 
@@ -9196,9 +9197,46 @@ section.Toastify {
 	margin-bottom: 0px !important;
 }
 
+.before-investorspage .investcardbg {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+}
+
+.before-investorspage .investcardbg>div {
+	width: auto;
+}
+
+.investorsdetails-bg {
+	background: #ffffff;
+	padding: 20px;
+	border-radius: 10px;
+}
+
+.beforeinvestorsdetails p,
+.beforeinvestors-form-page p {
+	color: #333 !important;
+}
+
+.beforeinvestorsdetails,
+.before-investorspage,
+.beforeinvestors-form-page {
+	margin-bottom: 10px;
+}
+
+.before-pre-home .projectbg .tabbanner {
+	gap: 10px !important;
+}
+
+.before-pre-home .wlltpageblnce {
+	padding: 0px;
+}
+
 /*media css start*/
 
 @media (max-width:1400px) {
+	.before-investorspage .investcardbg {
+		grid-template-columns: repeat(3, 1fr);
+	}
 
 	.heading-title {
 		font-size: 33px !important;
@@ -9210,12 +9248,19 @@ section.Toastify {
 }
 
 @media (max-width:1390px) {
+	.beforeinvestorsdetails .prtcnt .balancechart {
+		height: 240px !important;
+	}
+
 	.content-grid {
 		grid-template-columns: repeat(1, 1fr);
 	}
 }
 
 @media (max-width:1300px) {
+	.beforeinvestorsdetails .prtcnt .balancechart {
+		height: 220px !important;
+	}
 
 	.events-grid,
 	.pred-stats {
@@ -9229,9 +9274,23 @@ section.Toastify {
 	.coinlisttable img {
 		width: 24px;
 	}
+
+	.headermenu .headbg .navbar-nav .nav-item .nav-link {
+		font-size: 15px;
+		padding: 9px 13px;
+	}
+
+	.card-grid,
+	.project-grid {
+		grid-template-columns: repeat(2, 1fr);
+	}
 }
 
 @media (max-width:1250px) {
+	.before-investorspage .investcardbg {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
 	.stats-grid {
 		grid-template-columns: repeat(3, 1fr);
 	}
@@ -9251,6 +9310,9 @@ section.Toastify {
 }
 
 @media (max-width:1200px) {
+	.beforeinvestorsdetails .prtcnt .balancechart {
+		height: 200px !important;
+	}
 
 	.container {
 		width: 100%;
@@ -9258,22 +9320,28 @@ section.Toastify {
 	}
 }
 
-@media (max-width:1300px) {
-	.headermenu .headbg .navbar-nav .nav-item .nav-link {
-		font-size: 15px;
-		padding: 9px 13px;
-	}
-
-	.card-grid,
-	.project-grid {
-		grid-template-columns: repeat(2, 1fr);
+@media (max-width:1120px) {
+	.beforeinvestorsdetails .prtcnt .balancechart {
+		height: 180px !important;
 	}
 }
 
 @media (max-width:1080px) {
+
+	.before-investorspage .innerpagecontent,
+	.beforeinvestorsdetails .innerpagecontent,
+	.beforeinvestors-form-page .innerpagecontent {
+		padding-top: 100px !important;
+	}
+
 	.projectinfopage-flex {
 		flex-direction: column;
 	}
+
+	.before-pre-home .innerpagecontent {
+		padding-left: 280px;
+	}
+
 
 }
 
@@ -9289,6 +9357,7 @@ section.Toastify {
 		z-index: 2;
 	}
 
+
 	.start-guide-card:not(:last-child):hover::after {
 		color: #2AAF55;
 		transform: translateX(4px);
@@ -9296,6 +9365,13 @@ section.Toastify {
 }
 
 @media (max-width:991px) {
+
+	.before-pre-home .innerpagecontent,
+	.before-pre-market-trade-page .gridparentbox,
+	.before-profile-preview-page .gridparentbox {
+		padding-left: 15px;
+	}
+
 	.logo {
 		max-width: 140px;
 	}
@@ -9437,6 +9513,9 @@ section.Toastify {
 }
 
 @media (max-width:767px) {
+
+
+
 	.mini-grid {
 		grid-template-columns: repeat(2, 1fr);
 	}
@@ -9604,9 +9683,17 @@ section.Toastify {
 }
 
 @media (max-width:630px) {
+	.before-investorspage .investcardbg {
+		grid-template-columns: repeat(1, 1fr);
+	}
+
 	.status-option-new {
 		border-radius: 7px;
 		padding: 13px;
+	}
+
+	.beforeinvestorsdetails .prtcnt .table tbody tr>td:first-child {
+		text-align: start !important;
 	}
 }
 
@@ -9801,6 +9888,10 @@ section.Toastify {
 }
 
 @media (max-width:550px) {
+	.beforeinvestorsdetails .prtcnt .balancechart {
+		height: 160px !important;
+	}
+
 	img.plat-monetize-earn {
 		max-width: 280px;
 	}
@@ -9820,6 +9911,10 @@ section.Toastify {
 }
 
 @media (max-width:500px) {
+	.beforeinvestorsdetails .prtcnt .balancechart {
+		height: 150px !important;
+	}
+
 	.z-rwa .stats-grid {
 		grid-template-columns: repeat(1, 1fr);
 	}
@@ -9941,6 +10036,10 @@ section.Toastify {
 }
 
 @media (max-width:360px) {
+	.before-investorspage .investcardbg>div {
+		padding: 6px;
+	}
+
 	.tabbanner {
 		margin-top: 0px;
 	}

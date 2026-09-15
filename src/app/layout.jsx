@@ -14,11 +14,11 @@ export default function RootLayout({ children }) {
   useEffect(() => {
     require("bootstrap/dist/js/bootstrap.bundle.min.js");
 
-    // const timer = setTimeout(() => {
-    //   setLoading(false);
-    // }, 1000);
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 1000);
 
-    // return () => clearTimeout(timer);
+    return () => clearTimeout(timer);
   }, []);
 
   return (
