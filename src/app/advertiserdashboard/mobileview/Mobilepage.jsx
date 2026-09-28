@@ -1,0 +1,4 @@
+"use client";
+import React from "react";
+import AffiliateMobileSurface from "../../components/AffiliateMobileSurface";
+export default function Mobilepage() { return <AffiliateMobileSurface title="Advertiser Dashboard" eyebrow="Campaign workspace" sectionTitle="Top performing promoters" stats={[{ label: "Total balance", value: "$0", icon: "clicks.svg" }, { label: "Spend balance", value: "$0", icon: "leads.svg" }, { label: "Available", value: "$0", icon: "converstions.svg" }, { label: "Campaigns", value: "0", icon: "commission.svg" }]} actions={[{ label: "Campaign overview", href: "/campaignsoverview" }, { label: "Campaign manager", href: "/campaignsmanager" }, { label: "Performance report", href: "/campaignreport" }, { label: "Affiliate tracking", href: "/affiliatetracking" }]} columns={[{ label: "Clicks", key: "clicks" }]} rows={[{ title: "Growth Accelerator 2026", clicks: "0" }, { title: "Testing campaign", clicks: "0" }]} className="advertiser-mobile" />; }

@@ -3,6 +3,7 @@
 import React, { useEffect, useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "font-awesome/css/font-awesome.min.css";
+import "../../public/assets/css/mobileview.css";
 import { AppProgressBar as ProgressBar } from "next-nprogress-bar";
 import "./globals.css";
 import { Image } from "react-bootstrap";
@@ -16,7 +17,7 @@ export default function RootLayout({ children }) {
 
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 2000);
+    }, 1000);
 
     return () => clearTimeout(timer);
   }, []);
@@ -39,17 +40,17 @@ export default function RootLayout({ children }) {
         />
 
         <link
-          href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+          href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Sora:wght@600;700&display=swap"
           rel="stylesheet"
         />
       </head>
 
-      <body>
+      <body className="userpanelpage">
         <main>
           {loading ? (
             <div className="pageloaderbox">
               <Image
-                src="/assets/images/Ringx-loader.gif"
+                src="/assets/images/loader.gif"
                 alt="Loading..."
                 fluid
               />

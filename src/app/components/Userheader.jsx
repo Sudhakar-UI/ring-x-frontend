@@ -9,6 +9,7 @@ import 'simplebar-react/dist/simplebar.min.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheck } from '@fortawesome/free-solid-svg-icons';
 import { faEye } from '@fortawesome/free-solid-svg-icons';
+import MobileMenuSheet from './MobileMenuSheet';
 
 const Userheader = () => {
 
@@ -38,15 +39,18 @@ const Userheader = () => {
       <Navbar expand="lg" className="headbg uheadbg">
         <Container>
           <div className=" d-flex align-items-center">
-            <Navbar.Brand>
-              <Link href="/">
-                <Image src="assets/images/ringx-logo.svg" width={100} height={57} className="logo logo-act" alt="logo" />
-              </Link>
-            </Navbar.Brand>
-            {/* <Navbar.Toggle aria-controls="basic-navbar-nav" /> */}
-            <Navbar.Toggle
+             {/* <Navbar.Toggle aria-controls="basic-navbar-nav" /> */}
+            <Navbar.Toggle className="me-2"
               aria-controls="basic-navbar-nav"
+              aria-label="Open menu"
               onClick={() => {
+                // Below 767px, the hamburger opens the mobile bottom-drawer menu.
+                // At 767px and above it keeps opening the desktop sidebar.
+                if (typeof window !== "undefined" && window.innerWidth <= 767) {
+                  window.dispatchEvent(new CustomEvent("open-mobile-menu"));
+                  return;
+                }
+
                 const menu = document.getElementById("leftsidemenu");
                 const overlay = document.getElementById("backgroundoverlay");
 
@@ -55,6 +59,11 @@ const Userheader = () => {
                 document.body.classList.add("pagewrapperbox");
               }}
             />
+            <Navbar.Brand>
+              <Link href="/">
+                <Image src="assets/images/ringx-logo.svg" width={100} height={57} className="logo logo-act" alt="logo" />
+              </Link>
+            </Navbar.Brand>           
           </div>
           {/* <Navbar.Collapse id="basic-navbar-nav"> */}
           {/* <Nav className="navbar-nav leftheadbg">
@@ -87,7 +96,7 @@ const Userheader = () => {
               </NavDropdown>
 
             </Nav> */}
-          <div className="">
+          <div className="greeting-wrap">
             {/* <h2 className="h2">Dashboard</h2> */}
             <div className="greeting-box">
               <p className="greeting-title">Good morning, Aman 👋</p>
@@ -157,6 +166,9 @@ const Userheader = () => {
                 </NavDropdown.Item>
               </SimpleBar>
             </NavDropdown>
+            <Link href="/profile" className="mobile-avatar-btn" aria-label="Profile">
+              <span className="mobile-avatar-btn__initials">AK</span>
+            </Link>
             {/* <NavDropdown className="usermenudrop" title={<div className="pull-left"><Image src="assets/images/profile.svg" className="photopic" id="userprofile" alt="user" />John</div>} id="profiledrp">
                 <NavDropdown.Item as={Link} href="/profile" className="profilesubdropbox">
                   <span className="photopic">
@@ -177,6 +189,7 @@ const Userheader = () => {
           {/* </Navbar.Collapse> */}
         </Container>
       </Navbar>
+      <MobileMenuSheet />
     </header >
   )
 }

@@ -1,0 +1,4 @@
+"use client";
+import Homeheader from "../../components/Homeheader";
+import Predicatenav from "../../components/Predicatenav";
+export default function MobilePage() { return <div className="mobile-pre-settings-page"><Homeheader /><main className="mobile-pre-settings-page__main"><div className="mobile-route__eyebrow">Prediction wallet</div><h1>Account settings</h1><section className="mobile-form-card"><label>Display name<input placeholder="Your display name" /></label><label>Preferred currency<select defaultValue="USD"><option>USD</option><option>INR</option><option>EUR</option></select></label><label>Email notifications<select defaultValue="On"><option>On</option><option>Off</option></select></label><button className="mobile-primary-button" type="button">Save settings</button></section></main><Predicatenav /></div>; }

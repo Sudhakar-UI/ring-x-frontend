@@ -1,0 +1,4 @@
+"use client";
+import React from "react";
+import AffiliateMobileSurface from "../../components/AffiliateMobileSurface";
+export default function Mobilepage() { return <AffiliateMobileSurface title="Earnings" eyebrow="Affiliate Pro" sectionTitle="Commission history" stats={[{ label: "Total earnings", value: "$0", icon: "dpsticon1.svg" }, { label: "Available balance", value: "$0", icon: "deposit.svg" }, { label: "Withdrawals", value: "$0", icon: "withdraw.svg" }]} actions={[{ label: "Request withdrawal", href: "/requestwithdraw" }]} columns={[{ label: "Type", key: "type" }, { label: "Amount", key: "amount" }]} rows={[{ title: "GlowUp Skincare", date: "15 Apr 2025", type: "Sale", amount: "$60.00", status: "Paid" }, { title: "GlowUp Skincare", date: "15 Apr 2025", type: "Sale", amount: "$60.00", status: "Paid" }]} className="earnings-mobile" />; }

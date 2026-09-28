@@ -13,7 +13,10 @@
 .homebannerbg .borderbtn {
 	color: #181818;
 }
-
+.innerpagebg .gridparentbox.innerpage{
+	padding-top: 110px;
+	padding-left: 0 !important;
+}
 .banner-img {
 	width: 100%;
 	max-width: 348px;
@@ -6027,7 +6030,7 @@ ul.api-select {
 	}
 
 	.footlogo img {
-		max-width: 146px;
+		max-width: 150px;
 	}
 
 	.subscribebg .form-group {
